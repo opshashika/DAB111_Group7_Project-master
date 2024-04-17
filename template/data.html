@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+    <h1>Transaction Data</h1>
+    <table border="1">
+        <tr>
+            <th>Transaction ID</th>
+            <th>Transaction Date</th>
+            <th>Transaction Time</th>
+            <th>Transaction Quantity</th>
+            <th>Store ID</th>
+            <th>Store Location</th>
+            <th>Product ID</th>
+            <th>Unit Price</th>
+            <th>Product Category</th>
+            <th>Product Type</th>
+            <th>Product Detail</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[7] }}</td>
+            <td>{{ row[8] }}</td>
+            <td>{{ row[9] }}</td>
+            <td>{{ row[10] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
